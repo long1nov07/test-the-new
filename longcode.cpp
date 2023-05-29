@@ -1,27 +1,29 @@
-#include <iostream>
-#include <iomanip>
+#include<iostream>
+#include<iomanip>
+#include<string>
+
 using namespace std;
 
 int main(){
-//các biến    
-    int SoHocSinh(0);
-    int SoDinhDanh(0);
-    int So0(0);
-//nhập số học sinh
+    int So0 = 0;
+    int SoHocSinh = 0;
+    int SoDinhDanh = 0;
+    string TenHocSinh;
+
     cout<<"số học sinh: ";
-    cin>> SoHocSinh;
+        cin>> SoHocSinh;
+
     while(So0 < SoHocSinh){
         ++So0;
-        cout<<"id của học sinh "<< So0 <<":";
+        cout<<"tên học sinh "<< So0 <<": ";        
+        getline(cin, TenHocSinh);
+        cin.ignore(32767,'\n');
+
+
+        cout<<"nhập số định danh của học sinh "<<So0 <<": ";
         cin>> SoDinhDanh;
 
-    //lập bảng
-        // cout<< setw(5) << left <<
-
-
-
-    }
         
-
+    }
 
 }
